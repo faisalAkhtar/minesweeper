@@ -79,6 +79,32 @@ body {
 .four { color: #bb41d3; }
 #result { color: #e76346; }
 
+#flag,
+#help {
+    border: 5px solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    text-shadow: 1px 1px #9c998d;
+    text-align: center;
+    font-family: monospace;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#flag {
+    font-size: 20px;
+    float: left;
+}
+
+#flag.pressed {
+    border-color: #bab7a9 #fff9db #fff9db #bab7a9 ;
+}
+
+#help {
+    font-size: 25px;
+    float: right;
+}
+
 @media (max-device-width: 500px) {
     .grid div,
     .text {
