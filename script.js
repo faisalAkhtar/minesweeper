@@ -9,7 +9,16 @@
             this.flags = 0
             this.squares = []
             this.isGameOver = false
+            this.helpBtn = document.querySelector("#help")
+            this.helps = 3
+            this.flagBtn = document.querySelector("#flag")
+            this.flagCursor = true
             this.createBoard()
+
+            this.helpBtn.addEventListener("click", this.helpFunc);
+            this.helpBtn.innerHTML = "? = " + this.helps
+
+            this.flagBtn.addEventListener("click", this.flagFunc);
         },
         //create Board
         createBoard: function () {
@@ -186,6 +195,32 @@
                     result.innerHTML = 'YOU WIN!'
                     isGameOver = true
                 }
+            }
+        },
+        //help function
+        helpFunc: function () {
+            let _ = MineSweaper
+            if (_.isGameOver) return
+            if (_.helps<=0) return
+            let square
+            for (let bomb of document.querySelectorAll(".bomb")) {
+                if (!bomb.classList.contains("flag")) {
+                    square = bomb
+                    break
+                }
+            }
+            _.addFlag(square)
+            this.innerHTML = "? = " + (--_.helps)
+        },
+        flagFunc: function () {
+            let _ = MineSweaper
+            if (_.isGameOver) return
+            if (_.flagCursor) {
+                _.flagCursor = false
+                this.classList.add("pressed")
+            } else {
+                _.flagCursor = true
+                this.classList.remove("pressed")
             }
         }
     }
