@@ -5,7 +5,7 @@
 <p align="center">
   <img alt="Code size" src="https://img.shields.io/github/languages/code-size/faisalAkhtar/minesweeper" />
   &nbsp;
-  <a href="LICENSE"><img alt="license" src="https://img.shields.io/github/license/faisalAkhtar/minesweeper" /></a>
+  <a href="LICENSE"><img alt="license" src="https://img.shields.io/github/license/faisalakhtar/minesweeper" /></a>
 </p>
 
 <p align="center">
