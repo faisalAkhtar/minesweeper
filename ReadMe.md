@@ -1,6 +1,6 @@
 <h1 align="center">Minesweeper</h1>
 
-<p align="center">Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.</p>
+<p align="center">Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field. Credit goes to <a href="https://github.com/kubowania">@kubowania</a> for inspiring this.</p>
 
 <p align="center">
   <img alt="Code size" src="https://img.shields.io/github/languages/code-size/faisalAkhtar/minesweeper" />
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="SS.png">
+  <img src="SS.png" width="500">
   <br>
   Minesweeper
 </p>
